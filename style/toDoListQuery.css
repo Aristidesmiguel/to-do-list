@@ -1,0 +1,60 @@
+@media screen and (min-width: 360px) and (max-width:481px){
+    .box_input_centrar{
+        width: 90vw;
+        padding: 10px;
+    }
+    #input_tarefa{
+        width: 85vw;
+    }
+    .Listas-Tarefas div{
+        width: 85vw;
+        margin-right: 80px;
+    }
+    #adicionar{
+        width: 40px;
+        height: 40px;
+      }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px){
+    .box_input_centrar{
+        width: 99vw;
+        padding: 10px;
+    }
+    #input_tarefa{
+        width: 90vw;
+    }
+    .Listas-Tarefas div{
+        width: 90vw;
+        margin-right: 80px;
+    }
+    #adicionar{
+        width: 40px;
+        height: 40px;
+      }
+}
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .box_input_centrar{
+        width: 90vw;
+    }
+    #input_tarefa{
+        width: 80vw;
+    }
+    .Listas-Tarefas div{
+        width: 80vw;
+        margin-right: 80px;
+    }
+   
+}
+@media screen and (min-width: 1024px) and (max-width: 1026px){
+    .box_input_centrar{
+        width: 90vw;
+    }
+    #input_tarefa{
+        width: 80vw;
+    }
+    .Listas-Tarefas div{
+        width: 80vw;
+        margin-right: 90px;
+    }
+}

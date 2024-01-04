@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+:root{
+    --cor01: #222;
+    --cor02: #333;
+    --cor03: #444;
+    --cor04: white;
+}
+body{
+    background-color:aqua;
+    color: white;
+}
+#iguine{
+    width: 700px;
+    height: 700px;
+}
+main{
+    background-image: url("../f3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fundo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #333333f3;
+}
+aside{ 
+    font-size: 1.3em;
+}
+aside .title h1{
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+    border-bottom: 1px solid white;
+}
+aside h1{
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+aside p {
+    font-family: 'Caveat', cursive;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+aside a {
+    font-family: 'Caveat', cursive;
+    color: var(--cor04);
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px 70px;
+    cursor: pointer;
+    transition-duration: .3s;
+    font-weight: bolder;
+}
+aside a:hover {
+    background-color: var(--cor04);
+    color: #333;
+}
+.redes{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+.redes:hover{
+    scale: 1.1;
+}
