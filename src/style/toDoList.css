@@ -33,7 +33,7 @@ body{
     font-size:1.4em;
 }
 .box_input_centrar{
-    width: 50vw;
+    width: 80vw;
     background-color: var(--cor02);
     border-radius: 10px;
     display: flex;

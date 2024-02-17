@@ -7,7 +7,6 @@
     --cor04: white;
 }
 body{
-    background-color:aqua;
     color: white;
 }
 #iguine{
@@ -15,7 +14,7 @@ body{
     height: 700px;
 }
 main{
-    background-image: url("../f3.png");
+    background-image: url("../img/f3.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
