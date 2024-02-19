@@ -7,7 +7,7 @@ const INPUT_EDITAR = document.getElementById("editar");
 const CONTAINER_TAREFAS = document.getElementById("container_tarefa");
 
 for (let i = 0; i < TAREFAS.length; i++) {
-  const data = new Date(TAREFAS[i].data);
+  //const data = new Date(TAREFAS[i].data);
   criarElementoTarefa(TAREFAS[i]);
 }
 function executarSistema() {
@@ -21,16 +21,20 @@ function executarSistema() {
 }
 function criarElementoTarefa(Tarefa) {
   const ITEM = document.createElement("div");
+
   const BOTAO_DELETE = document.createElement("button");
   const BOTAO_EDIT = document.createElement("button");
+
   const SECTION_BOTOES = document.createElement("span");
+
   const heading_create = document.createElement("h4");
   const heading_edit = document.createElement("h4");
+
   heading_create.textContent = "Create: " + Tarefa.data;
-  heading_edit.textContent = "Edit: " + Tarefa.dataEdit;
 
   const NOME_DA_TAREFA = Tarefa.nome;
   const container_input_value = document.createElement("span");
+
   container_input_value.append(NOME_DA_TAREFA);
   SECTION_BOTOES.append(BOTAO_DELETE, BOTAO_EDIT, heading_create, heading_edit);
   ITEM.append(container_input_value, SECTION_BOTOES);
@@ -119,12 +123,8 @@ function editarTarefa(inputValor, container_input_value, Tarefa, heading_edit) {
     container_input_value.textContent = valorDaTarefa;
     INPUT_ADICIONAR.style.display = "block";
     INPUT_EDITAR.style.display = "none";
-    
-    if (valorDaTarefa) {
-      const NOVA_TAREFA = { ...Tarefa, nome: valorDaTarefa,  dataEdit: new Date().toLocaleTimeString()};
-      dataBase.editarTarefa("lists", NOVA_TAREFA);
-      heading_edit.textContent = "Edit: " + NOVA_TAREFA.dataEdit;
-    }
+    const NOVA_TAREFA = { ...Tarefa, nome: valorDaTarefa, dataEdit: new Date().toLocaleTimeString()};
+    dataBase.editarTarefa("lists", NOVA_TAREFA);
   });
 }
 
